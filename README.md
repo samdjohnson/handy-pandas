@@ -14,3 +14,11 @@ df['datetime_column_name'] = pd.to_datetime(df['datetime)column_name'])
 ```python
 df.to_pickle('file_path.pickle')
 df = pd.read_pickle('file_path.pickle)
+```
+
+### Check is column is null
+
+```python
+# returns a True/False series indicating whether a value is null
+pd.isnull(df['column_with_null_values'])
+```
